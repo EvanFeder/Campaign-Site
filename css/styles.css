@@ -1,23 +1,41 @@
 ::selection {
-  background: #0d144a;
-  color: #fff;
+  background: rgba(0, 0, 0, 0.15);
+  opacity: 0.9;
 }
 ::-moz-selection {
   background: #0d144a;
   color: #fff;
 }
 
+.strikeout {
+  line-height: 1em;
+  position: relative;
+}
+.strikeout::after {
+  border-bottom: 0.2em solid red;
+  content: "";
+  left: 0;
+  margin-top: calc(0.125em / 2 * -1);
+  position: absolute;
+  right: 0;
+  top: 35%;
+}
+
 body{
     overflow-x: hidden;
 }
 
-.owl-carousel{
-    height: 40pc;
-    overflow: hidden;
+.top-nav {
+  background-color: #EBE7DC;
 }
 
-.owl-item img{
-    margin-top: 2.8em;
+.header-pic{
+    height: 80vh;
+    overflow: hidden;
+    background-image: url(../images/header.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
 }
 
 .highlight-red{
@@ -54,26 +72,31 @@ body{
     margin-right: 5%;
     padding: 5px;
     padding-top: 7px;
-    background-color: #0d144a;
-    color: #fff;
+    background-color: #EBE7DC;
+    color: #333;
     border-radius: 2px;
-    border: 2px solid #0d144a;
+    border: 2px solid #EBE7DC;
+}
+
+.candidate-image{
+  width: 90%;
+  margin-top: 20px;
 }
 
 .info-bullets{
-    font-size: 16px;
-    margin-top: 7px;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    margin-top: 18px;
     margin-right: 5%;
     text-align: left;
     margin-left: 15px;
-    line-height: 22px;
 }
 
 .issue-header{
     font-size: 32px;
     padding: 15px;
-    color: #fff;
-    background-color: #0d144a;
+    color: #333;
+    background-color: #EBE7DC;
     margin-right: -100%;
     margin-left: 15px;
 }
@@ -86,8 +109,9 @@ body{
 }
 
 .platform-desc{
-    color: #fff;
-    display: none;
+    color: #333;
+    font-size: 1.2em;
+  line-height: 1.3em;
 }
 
 .issue-image{
@@ -169,6 +193,7 @@ body{
 }
 
 .noselect {
+  cursor: default;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none;   /* Chrome/Safari/Opera */
   -khtml-user-select: none;    /* Konqueror */
@@ -178,36 +203,25 @@ body{
                                   not supported by any browser */
 }
 
-#clockdiv{
-	color: #fff;
-	display: inline-block;
-	font-weight: 100;
-	text-align: center;
-	font-size: 30px;
-}
-
-#clockdiv > div{
-	padding: 10px;
-	border-radius: 3px;
-	background: #e32f33;
-	display: inline-block;
-}
-
-#clockdiv div > span{
-	padding: 15px;
-	border-radius: 3px;
-	display: inline-block;
-    color: #0d144a;
-    background: #fff;
-    width: 70px;
-}
-
 .smalltext{
 	padding-top: 7px;
 	font-size: 16px;
 }
 
+.bigtext {
+  font-size: 120%;
+}
+
+.highlight-red {
+  font-weight: 900;
+  color: #DA3A4D;
+}
+
 @media screen and (max-width: 1100px){
+    .header-pic {
+      height: 60vh;
+    }
+  
     .owl-carousel{
         height: 100%;
     }
@@ -234,6 +248,10 @@ body{
     
     .platform-desc{
         font-size: 12px;
+    }
+  
+    .candidate-image{
+      width: 90%;
     }
 
 }
@@ -266,15 +284,7 @@ body{
     }
     
     .info-bullets{
-        font-size: 14px;
-    }
-    
-    .owl-item img{
-        margin-top: 0;
-    }
-    
-    .owl-carousel{
-        height: 100%;
+        font-size: 16px;
     }
     
     .candidate-names{
@@ -303,7 +313,10 @@ body{
     }
     
     .highlight-red{
-        font-size: 1.4em;
         padding: 5px;
+    }
+  
+    .candidate-image{
+      width: 95%;
     }
 }

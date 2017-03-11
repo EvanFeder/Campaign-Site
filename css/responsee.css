@@ -29,7 +29,6 @@ h5 {font-size:1em;}
 h6 {font-size:0.9em;}    
 a, a:link, a:visited, a:hover, a:active {
 	text-decoration:none;
-  color:#444;
 	}
 img {
   border:0;
@@ -324,9 +323,9 @@ nav {
   padding:0;
 }
 .top-nav li a {
-  border-top:1px solid #fff;
-  color:#fff;
-  background-color: #e32f33;
+  border-bottom:1px solid #444;
+  color:#444;
+  background-color: #EBE7DC;
   display:block;
   padding:0.625em;
   text-decoration:none;
@@ -335,7 +334,7 @@ nav {
 .top-nav li ul li ul li a {border-top:1px solid #989898;}
 .top-nav li a:hover {
   background:none repeat scroll 0 0 #8b8b8b;
-  color:#fff;
+  color:#444;
 }
 .top-nav li ul,.top-nav li ul li ul {
   display:block;  
