@@ -176,7 +176,7 @@ a.button {
 }
 .content-block {
 	background: none repeat scroll 0 0 #EBE7DC;
-	padding: 2.5em;
+	padding-top: 2.5em;
     height: 180px;
 }
 .content-block h3 {
