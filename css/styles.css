@@ -280,14 +280,18 @@ body{
     .issue-text{
         font-size: 1.1em;
         line-height: 130%;
+        margin-left: 20px;
     }
     
     .issue-header{
-        margin-right: -10px;
+        margin: 0;
+        text-align: center;
     }
     
     .candidate-header{
         font-size: 25px;
+        text-align: center;
+        margin-right: 0;
     }
     
     .info-bullets{
