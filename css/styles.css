@@ -30,6 +30,7 @@ body{
 }
 
 .header-pic{
+    margin-top: 40px;
     height: 80vh;
     overflow: hidden;
     background-image: url(../images/header.jpg);
@@ -97,7 +98,6 @@ body{
     padding: 15px;
     color: #333;
     background-color: #EBE7DC;
-    margin-right: -100%;
     margin-left: 15px;
 }
 
@@ -115,9 +115,7 @@ body{
 }
 
 .issue-image{
-    border: 1px solid #0d144a;
-    border-radius:15px;
-    height:200px;
+    width: 82%;
     margin:auto;
     margin-bottom: 15px;
 }
@@ -220,6 +218,7 @@ body{
 @media screen and (max-width: 1100px){
     .header-pic {
       height: 60vh;
+      background-position: right;
     }
   
     .owl-carousel{
@@ -245,14 +244,22 @@ body{
     .issue-text{
         font-size: 20px;
     }
-    
-    .platform-desc{
-        font-size: 12px;
-    }
   
     .candidate-image{
       width: 90%;
     }
+  
+    .header-pic{
+      margin-top: 0;
+    }
+  
+  #content h2 {
+    font-size: 1.2em;
+  }
+  
+  section h3 {
+    hyphens: auto;
+  }
 
 }
 
@@ -271,8 +278,8 @@ body{
     }
     
     .issue-text{
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 1.1em;
+        line-height: 130%;
     }
     
     .issue-header{
@@ -284,7 +291,7 @@ body{
     }
     
     .info-bullets{
-        font-size: 16px;
+        font-size: 1.1em;
     }
     
     .candidate-names{
@@ -296,7 +303,7 @@ body{
     }
     
     .platform-desc{
-        font-size: 14px;
+        font-size: 1.1em;
     }
     
     #clockdiv{
