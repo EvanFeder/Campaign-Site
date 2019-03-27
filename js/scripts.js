@@ -34,8 +34,8 @@ jQuery(document).ready(function($) {
     $("#scroll-platform").click(function(){
         $('body').scrollTo('#platform');
     });
-    $("#scroll-issues").click(function(){
-        $('body').scrollTo('#issues');
+    $("#scroll-thanks").click(function(){
+        $('body').scrollTo('#thanks');
     });
     $("#scroll-contact").click(function(){
         $('body').scrollTo('#contact');

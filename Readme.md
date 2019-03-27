@@ -1,4 +1,4 @@
-# Gaby Cach for Carnegie Mellon VPF
+# Evan Feder and Wenyi Zhu for Carnegie Mellon SPF and SBPF
 
 Here are some useful links:
 
